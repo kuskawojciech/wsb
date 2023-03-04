@@ -12,6 +12,28 @@
     $lastname = "Nowak";
 echo "Imię i nazwisko:  $firstname $lastname"; 
 
+//heredoc
+    echo <<< DATA
+        <hr>
+        Imię: $firstname<br>
+        Nazwisko: $lastname<br>
+    DATA;
+
+ 
+//nowdoc
+    echo <<< 'DATA'
+    <hr>
+    Imię: $firstname<br>
+    Nazwisko: $lastname<br>
+
+DATA;
+$bin = 0b1010;
+echo $bin; //10
+$oct = 0o10;
+echo $oct; //8
+$hex = 0x1A;
+echo $hex; //26
+
 
 ?>
     
